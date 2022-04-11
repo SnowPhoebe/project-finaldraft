@@ -18,12 +18,19 @@
     <link rel = "stylesheet" href = "css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Index</title>
 </head>
 <body>
     <header>
         <div class="nav">
-            <h1 id = "greeting-sentence">Welcome to Phoebe's page!</h1>
+            <!-- <h1 id = "greeting-sentence">Welcome to Phoebe's page!</h1> -->
+            <div class = "mobile_menu">
+                <h1 id = "greeting-sentence">Welcome to Phoebe's page!</h1>
+                <div class = "openMenu" onclick="myFunction()"> 
+                    <i class="fa fa-bars" id = "bar"></i>
+                </div>
+            </div>
             <nav>
                 <ul class="nav_links">
                     <li><a href = "index.html" >Home</a></li>
@@ -124,6 +131,30 @@
     <footer>
         <p>Phoebe Xu &copy; 2022</p>
     </footer>
+
+    <script>
+        function myFunction() {
+            // var x = document.querySelector("#mainMenu");
+            var x = document.querySelector(".nav_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+        function resizeFunction(){
+            var w = window.innerWidth;
+            if (w > 1024)
+            {
+                document.querySelector(".nav_links").style.display = "flex";
+                // console.log(w)
+            }
+            // if (window.innerWidth > "500px")
+            // {
+            //     document.querySelector(".nav_links").style.display = "flex";
+            // }
+        }
+    </script>
  
 </body>
 </html>
