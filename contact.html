@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T47RJ2ZBZ2"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T47RJ2ZBZ2');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/s_p.png">
+    <link rel = "stylesheet" href = "css/html5reset.css">
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Index</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h1 id = "greeting-sentence">Welcome to Phoebe's page!</h1>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href = "index.html" >Home</a></li>
+                    <li><a href = "seattle.html">Seattle</a></li>
+                    <li><a href = "boston.html">Boston</a></li>
+                    <li><a href = "la.html">LA</a></li>
+                    <li class="active contactform"><a href = "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="flip-card" tabindex="0">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1 class="contact_title">Contact me</h1>
+              </div>
+              <div class="flip-card-back">
+                <h1 class="contact_title">phoebexu@umich.edu</h1>
+              </div>
+            </div>
+        </div>
+
+        <!-- <div class="flip-card" >
+            <div class="flip-card-inner">
+                <a href="#" id="flip-card-inner">
+                    <div class="flip-card-front">
+                        <legend id = "contact-form">Contact me</legend>
+                    </div>
+                </a>
+            <div class="flip-card-back">
+                <p>phoebexu@umich.edu!</p>
+            </div>
+        </div> -->
+      
+    </header>
+
+    <main>
+        <form 
+        action="https://formspree.io/f/mknyqgoy"
+         method="POST"
+        >
+        <fieldset>
+          <legend id = "contact-form">Contact Form</legend>
+    
+
+          <div id = "first-row">
+              <i class="fa fa-user-circle-o icon icon_style"></i>
+              <label for="name_id">Name</label>
+              <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+          </div>
+      
+          
+          <div>
+              <i class="fa fa-envelope icon icon_style"></i>
+              <label for="email_id">Email Address</label>
+              <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+          </div>
+          
+          <div>
+              <i class="fa fa-phone icon icon_style"></i>
+              <label for="phone_id">Phone Number</label>
+              <input type="tel" placeholder="123-456-7890" id = "phone_id" name="phone" required>
+          </div>
+          
+      
+          <div>
+              <i class="fa fa-commenting icon icon_style"></i>
+              <label for="msg">Leave A Message</label>
+              <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+          </div>
+          
+          <div>
+              <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+              <label for ="cBox">Remember me</label>
+          </div>
+          
+          <div>
+              <input type="submit" value = "Submit">
+          </div>
+          
+        </fieldset>
+       </form>
+
+       <!-- <div class="flip-card">
+        <div class="flip-card-inner">
+            <a href="#" id="flip-card-inner">
+                <div class="flip-card-front">
+                    <p>Contact me!</p>
+                </div>
+            </a>
+        <div class="flip-card-back">
+            <p>phoebexu@umich.edu!</p>
+        </div>
+        </div> -->
+
+    </main>
+
+    <footer>
+        <p>Phoebe Xu &copy; 2022</p>
+    </footer>
+ 
+</body>
+</html>
