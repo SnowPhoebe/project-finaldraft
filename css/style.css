@@ -646,6 +646,21 @@ footer {
 @media only screen and (min-width: 780px)
 {
 
+  .boston-container
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+
+  main{
+    font-size: 19px;
+  }
+
   img {
     border: 5px solid palevioletred;
   }
@@ -853,6 +868,20 @@ footer {
 
 
 @media only screen and (min-width: 1024px) {
+
+  .boston-container
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+  }
+
+  #main{
+    font-size: 21px;
+  }
 
   img {
     border: 5px solid dodgerblue;
