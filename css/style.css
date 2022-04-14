@@ -19,6 +19,7 @@ body {
   min-height: 300px; 
   /* width: 100%; */
   background-attachment: fixed;
+  /* top: 300px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,12 +180,6 @@ input[type="submit"]:hover {
   .parallax {
     background-attachment: initial;
   }
-
-  /* .seattle-image {
-    -webkit-transform: initial;
-    -ms-transform: none;
-    transform: initial;
-  } */
 
 }
 
@@ -361,7 +356,8 @@ div a {
 img {
   max-width: 80%;
   height: auto;
-  border: 5px solid #d4d4f7;
+  border: 5px solid orange;
+  /* border: 5px solid lavender;  */
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
@@ -622,7 +618,7 @@ footer {
 
 .flip-card-back {
   background-color: dodgerblue;
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -650,8 +646,9 @@ footer {
 @media only screen and (min-width: 780px)
 {
 
-
-
+  img {
+    border: 5px solid palevioletred;
+  }
   .openMenu
   {
     font-size: 2rem;
@@ -857,10 +854,10 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
-  /* .nav_links
-  {
-    display: flex;
-  } */
+  img {
+    border: 5px solid dodgerblue;
+  }
+
   .openMenu
   {
     font-size: 2rem;
