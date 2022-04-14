@@ -23,6 +23,12 @@
 </head>
 <body onresize = "resizeFunction()">
     <header>
+        <div id = "jump_to">
+            <a class = "skip" href="#main">Skip to Main Content</a>
+            <!-- <a class = "skip" href="#seattle_intro">Skip to Seattle intro</a>
+            <a class = "skip" href="#boston_intro">Skip to Boston intro</a>
+            <a class = "skip" href="#la_intro">Skip to Los Angeles intro</a> -->
+        </div>
         <div class="nav">
             <!-- <h1 id = "greeting-sentence">Welcome to Phoebe's page!</h1> -->
             <div class = "mobile_menu">
@@ -67,7 +73,7 @@
       
     </header>
 
-    <main>
+    <main id = "main">
         <form 
         action="https://formspree.io/f/mknyqgoy"
          method="POST" id = "form1"
